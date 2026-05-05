@@ -37,4 +37,4 @@ Here are steps to install docker and minikube on ubuntu:
 
 ## Sample Output
 
-![image](images/docker-minikube-status.jpg)
+![image](../images/docker-minikube-status.jpg)
