@@ -19,7 +19,9 @@ Here are steps to install docker and minikube on ubuntu:
     # curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
     # sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
     # sudo apt install docker-ce
-    # usermod -aG docker <normal_user>
+    # usermod -aG docker <normal_user> 
+```
+```bash
   install minikube
     # curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
     # chmod +x kubectl
@@ -29,6 +31,8 @@ Here are steps to install docker and minikube on ubuntu:
     # minikube start --driver=docker
     - OR - 
     # minikube start --driver=docker --force
+```
+```bash
     verify with :
     # minikube status
     # kubectl get nodes
