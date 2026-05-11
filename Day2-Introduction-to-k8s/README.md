@@ -24,8 +24,7 @@ with:
  - self healing, etc.
 
 ## Kubernetes Components
-
-![components](../images/components-of-kubernetes.jpg)
+<img width="4225" height="2028" alt="Image" src="https://github.com/user-attachments/assets/827946c1-f1f2-4370-a3da-d7adf7e58053" />
 
 kube-apiserver : The core component server that exposes the Kubernetes HTTP API.
 
