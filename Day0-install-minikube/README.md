@@ -10,10 +10,10 @@ Minikube : This is a software to facilitate kubernetes cluster on Ubuntu.
 
 ## Install docker & minikube and prepare k8s setup
 
-Here are steps to install docker and minikube on ubuntu:
+### 🚀Here are steps to install docker and minikube on ubuntu:
 
+<mark>install docker</mark>
 ```bash
-  install docker
     # apt update
     # sudo apt install apt-transport-https ca-certificates curl software-properties-common
     # curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
@@ -21,8 +21,9 @@ Here are steps to install docker and minikube on ubuntu:
     # sudo apt install docker-ce
     # usermod -aG docker <normal_user> 
 ```
+
+<mark>install minikube</mark>
 ```bash
-  install minikube
     # curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
     # chmod +x kubectl
     # sudo mv kubectl /usr/local/bin/
@@ -32,13 +33,14 @@ Here are steps to install docker and minikube on ubuntu:
     - OR - 
     # minikube start --driver=docker --force
 ```
+
+<mark>verify with :</mark>
 ```bash
-    verify with :
     # minikube status
     # kubectl get nodes
 ```
 
 
-## Sample Output
+## Sample Output ✔️
 
-<img width="1242" height="577" alt="Image" src="https://github.com/user-attachments/assets/9da7da4f-cd50-490a-b95d-ee7d9fa7b2b7" />
+<img width="1477" height="612" alt="Image" src="https://github.com/user-attachments/assets/9f43d528-abf5-4cf8-af20-e1e601dfa7be" />
