@@ -1,18 +1,18 @@
 
-# Day 1 : Introduction to Kubernetes.
+# Day 2 : Introduction to Kubernetes.
 
 ## What is Kubernetes
 
-- Kubernetes is a portable, extensible, open source platform for   managing containerized workloads and services that facilitate both declarative configuration and automation.
+- Kubernetes is a **portable, extensible, open source platform** for managing containerized workloads and services that facilitate both declarative configuration and automation.
 
-- It serves as a robust orchestration tool for organizing containers across multiple servers, ensuring high availability, load balancing, and self-healing.
+- It serves as a **robust orchestration tool** for organizing containers across multiple servers, ensuring high availability, load balancing, and self-healing.
 
-- Kubernetes = Tool that runs, manages, and scales containerized apps automatically.
+- **Kubernetes = Tool** that runs, manages, and scales containerized apps automatically.
 
 
-## Why Kubernetes
+## ❓Why Kubernetes 
 
-Kubernetes answers many question like following:
+💡Kubernetes answers many question like following: 
  - Container Networking?
  - Resource Management
  - Security
@@ -23,51 +23,32 @@ with:
  - Service discovery and load balancing 
  - self healing, etc.
 
-## Kubernetes Components
-<img width="4225" height="2028" alt="Image" src="https://github.com/user-attachments/assets/827946c1-f1f2-4370-a3da-d7adf7e58053" />
+## Kubernetes Components ✔️
 
-kube-apiserver : The core component server that exposes the Kubernetes HTTP API.
+<img width="1402" height="882" alt="Image" src="https://github.com/user-attachments/assets/5596fe7b-aad4-4a72-92c4-bd42f13d79e1" />
 
-etcd : Consistent and highly-available key value store for all API server data.
+### 🚀<mark>Core Components</mark> 
 
-kube-scheduler : Looks for Pods not yet bound to a node, and assigns each Pod to a suitable node.
+**kube-apiserver** : The core component server that exposes the Kubernetes HTTP API.
 
-kube-controller-manager : Runs controllers to implement Kubernetes API behavior.
+**etcd** : Consistent and highly-available key value store for all API server data.
 
-cloud-controller-manager (optional) : Integrates with underlying cloud provider(s).
+**kube-scheduler** : Looks for Pods not yet bound to a node, and assigns each Pod to a suitable node.
 
-Node Components :
+**kube-controller-manager** : Runs controllers to implement Kubernetes API behavior.
 
-kubelet : Ensures that Pods are running, including their containers.
+**cloud-controller-manager (optional)** : Integrates with underlying cloud provider(s).
 
-kube-proxy (optional) : Maintains network rules on nodes to implement Services.
+### 🚀<mark>Node Components</mark> 
 
-Container runtime : Software responsible for running containers. Read Container Runtimes to learn more.
+**kubelet** : Ensures that Pods are running, including their containers.
 
-## Pods
-Pods are the smallest deployable units of computing that you can create and manage in Kubernetes.
+**kube-proxy** (optional) : Maintains network rules on nodes to implement Services.
 
-## Sample yaml
+**Container runtime** : Software responsible for running containers. Read Container Runtimes to learn more.
 
-- Imparative way 
-```bash
-kubectl apply -f https://k8s.io/examples/pods/simple-pod.yaml
-```
+<img width="1120" height="1380" alt="Image" src="https://github.com/user-attachments/assets/f2d3d0d2-86d4-4a30-99a3-9375498a7f0e" />
 
-- Declarative way
-
-```bash
-apiVersion: v1  < Which version of Kubernetes API you are talking to >
-kind: Pod  < What type of object you want to create >
-metadata:  < Basic information (identity) about the object >
-  name: nginx
-spec:  < The actual desired state (what you want Kubernetes to run) >
-  containers:
-  - name: nginx
-    image: nginx
-    ports:
-    - containerPort: 80
-```
 ## Documentation
 
 [Documentation for Overview](https://kubernetes.io/docs/concepts/overview/)
