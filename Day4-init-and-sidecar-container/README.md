@@ -57,7 +57,7 @@ Sidecar containers are the secondary containers that **run along with the main a
 🚀<mark>**Setting `restartPolicy: Always` makes init container a sidecar container**</mark>
 
 🚀Here is an exampl:
-````yaml
+```yaml
 apiVersion: v1
 kind: Pod
 metadata:
@@ -82,7 +82,7 @@ spec:
 ```
 
 ## Documentation
+Refer to the official Kubernetes documentation for [Init Containers](https://kubernetes.io/docs/concepts/workloads/pods/init-containers/).
 
-[Documentation for init containers](https://kubernetes.io/docs/concepts/workloads/pods/init-containers/)
+Refer to the official Kubernetes documentation for [sidecar Containers](https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/).
 
-[Documentation for sidecar containers](https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/)
