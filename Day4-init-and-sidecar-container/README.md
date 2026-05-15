@@ -1,5 +1,5 @@
 
-# Day 1 : Init & Sidecar containers in Kubernetes.
+# Day 4 : Init & Sidecar containers in Kubernetes.
 
 ## Init container
 
